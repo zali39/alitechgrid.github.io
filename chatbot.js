@@ -1,22 +1,21 @@
 
-document.getElementById("chatbot-icon").addEventListener("click", () => {
-  const chatWindow = document.getElementById("chat-window");
-  chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
-});
-
 function sendMessage() {
-  const input = document.getElementById("chat-input");
-  const log = document.getElementById("chat-log");
-  const message = input.value.trim();
-  if (!message) return;
-  log.innerHTML += "<div><b>You:</b> " + message + "</div>";
-  input.value = "";
+    const input = document.getElementById('user-input');
+    const chatWindow = document.getElementById('chat-window');
+    const message = input.value.toLowerCase().trim();
 
-  let response = "🤖 Sorry, I didn't understand that. Try asking about services, pricing, or contact.";
-  if (message.toLowerCase().includes("quiz")) response = "🧠 Quiz Generator: You can upload a course outline to generate quizzes automatically.";
-  if (message.toLowerCase().includes("plagiarism")) response = "🕵️ Plagiarism Checker: Upload your project to verify originality.";
-  if (message.toLowerCase().includes("contact")) response = "📧 Email us at info@alitechgrid.com or call +1-800-123-4567.";
-  if (message.toLowerCase().includes("course")) response = "📂 Course Analyzer: Upload DOCX/PDF files for auto analysis and assessment creation.";
+    let response = "Sorry, I didn't understand that.";
+    if (message.includes("quiz")) {
+        response = "You can use our Quiz Generator to create quizzes based on your uploaded course outline.";
+    } else if (message.includes("plagiarism")) {
+        response = "Our Plagiarism Checker helps detect originality in your documents.";
+    } else if (message.includes("outline")) {
+        response = "Upload your course outline in DOCX or PDF format to analyze learning outcomes.";
+    } else if (message.includes("contact")) {
+        response = "You can email us at info@alitechgrid.com or call +1-800-123-4567.";
+    }
 
-  log.innerHTML += "<div><b>Bot:</b> " + response + "</div>";
+    chatWindow.innerHTML += `<div><b>You:</b> ${input.value}</div>`;
+    chatWindow.innerHTML += `<div><b>Bot:</b> ${response}</div>`;
+    input.value = '';
 }

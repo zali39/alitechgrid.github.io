@@ -2,21 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlitechGrid</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>AlitechGrid - AI for Education & Enterprise</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/chatbot.js" defer></script>
 </head>
 <body>
-  <h1>Welcome to AlitechGrid</h1>
-  <div id="chatbot-container">
-    <img src="chatbot-icon.png" id="chatbot-icon" alt="Chatbot Icon" />
-    <div id="chat-window" style="display:none;">
-      <div id="chat-log"></div>
-      <input type="text" id="chat-input" placeholder="Ask me anything..." />
-      <button onclick="sendMessage()">Send</button>
+    <header>
+        <h1>Welcome to AlitechGrid</h1>
+        <p>Empowering AI & Cloud-Driven Innovation</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/quiz">Quiz Generator</a>
+            <a href="/plagiarism">Plagiarism Checker</a>
+            <a href="/outline">Course Outline AI</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our AI-Powered Services</h2>
+            <ul>
+                <li>Quiz Generator: Auto-generate quizzes from your uploaded course outlines.</li>
+                <li>Plagiarism Checker: Detect originality in uploaded student projects.</li>
+                <li>Course Outline Analyzer: Analyze and break down DOCX/PDF files into assessments.</li>
+                <li>Contact & Feedback: Get in touch for quotes or help.</li>
+            </ul>
+        </section>
+    </main>
+    <div id="chatbot">
+        <div id="chat-window"></div>
+        <input type="text" id="user-input" placeholder="Ask about services, quote, or contact...">
+        <button onclick="sendMessage()">Send</button>
     </div>
-  </div>
-  <script src="chatbot.js"></script>
 </body>
 </html>
