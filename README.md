@@ -1,2 +1,2 @@
 # alitechgrid.github.io
-For alitechgrid.cpm website 
+For alitechgrid.com website 
