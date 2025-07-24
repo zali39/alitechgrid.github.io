@@ -1,18 +1,20 @@
-# AlitechGrid Chatbot-Enhanced Website
+# AlitechGrid Smart FAQ Chatbot
 
-This repository contains the static frontend of the AlitechGrid website featuring an AI-powered FAQ chatbot.
+This is a minimal AI-style FAQ chatbot for your website.
+
+## Features
+- Clickable chatbot icon
+- Responds to customer questions (services, pricing, contact, quote)
+- Scrolls to relevant sections
+- Styled to match your branding
+- No API required
 
 ## Files
-- `index.html`: Main homepage with chatbot integration
-- `chatbot.js`: Chatbot logic and FAQs
-- `style.css`: Styling for layout and chatbot
-- `chatbot-icon.png`: Icon to launch chatbot
-- `README.md`: Project description
+- `index.html` — Main webpage
+- `style.css` — Page and chatbot styles
+- `chatbot.js` — Logic for bot response and scrolling
+- `chatbot-icon.png` — Bubble icon
+- `README.md` — Setup and instructions
 
-## Hosting
-- Frontend hosted on GitHub Pages
-- Backend (optional) can be deployed via PythonAnywhere
-
-## Instructions
-1. Upload files to your GitHub Pages repo
-2. For backend support (form/email/API), deploy Flask app at PythonAnywhere
+## Usage
+Just open `index.html` in your browser or deploy to GitHub Pages. No backend is required.
