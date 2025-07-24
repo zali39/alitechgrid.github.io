@@ -1,31 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AlitechGrid | AI-Powered Solutions</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>AlitechGrid | AI Education & Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="chatbot-icon.png" type="image/png">
 </head>
 <body>
     <header>
         <h1>Welcome to AlitechGrid</h1>
-        <p>Your partner in Python, Cloud, and Cybersecurity Education</p>
+        <p>Your gateway to AI-Powered Education & Business Solutions</p>
     </header>
+
     <main>
-        <p>Explore our AI-powered learning tools, resume analyzer, and chatbot assistant.</p>
-        <div id="chatbot-container">
-            <img src="chatbot-icon.png" alt="Chatbot Icon" id="chatbot-icon" onclick="toggleChat()">
-            <div id="chatbox" style="display:none;">
-                <div id="chatlog"></div>
-                <input type="text" id="user-input" placeholder="Ask me anything...">
-                <button onclick="sendMessage()">Send</button>
-            </div>
-        </div>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>AI for Education</li>
+                <li>AI for Business</li>
+                <li>Corporate Training</li>
+                <li>Resume Analyzer</li>
+            </ul>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2025 AlitechGrid. All rights reserved.</p>
-    </footer>
+
+    <div id="chatbot-container">
+        <img src="chatbot-icon.png" id="chatbot-icon" alt="Chatbot">
+        <div id="chat-window" class="hidden">
+            <div id="chat-output"></div>
+            <input type="text" id="user-input" placeholder="Ask about our services...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
     <script src="chatbot.js"></script>
 </body>
 </html>
