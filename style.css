@@ -1,0 +1,40 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header, footer {
+    background-color: #0d47a1;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+main {
+    padding: 2em;
+}
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#chatbot-icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+#chatbox {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 2px solid #0d47a1;
+    border-radius: 8px;
+    padding: 10px;
+    overflow: auto;
+}
+#chatlog {
+    height: 340px;
+    overflow-y: auto;
+}
