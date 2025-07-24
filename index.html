@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AlitechGrid | AI Solutions</title>
+  <title>AlitechGrid</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,27 +11,26 @@
     <h1>Welcome to AlitechGrid</h1>
     <p>Your gateway to AI-Powered Education & Business Solutions</p>
   </header>
-  <main>
-    <section class="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>AI for Education</li>
-        <li>AI for Business</li>
-        <li>Corporate Training</li>
-        <li>Resume Analyzer</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 AlitechGrid. All rights reserved.</p>
-  </footer>
-  <div id="chatbot">
-    <img id="chatbot-icon" src="chatbot-icon.png" alt="Chatbot Icon" />
-    <div id="chatbox" class="hidden">
-      <div id="chatlog"></div>
-      <input type="text" id="userInput" placeholder="Ask about our services..." />
-      <button onclick="sendMessage()">Send</button>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>AI for Education</li>
+      <li>AI for Business</li>
+      <li>Corporate Training</li>
+      <li>Resume Analyzer</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@alitechgrid.com</p>
+    <p>Phone: +1-800-ALITECH</p>
+  </section>
+  <div class="chatbot">
+    <div id="chatbox">
+      <p><strong>Bot 🤖:</strong> Hi there! Ask me about our services, pricing, or how to contact us.</p>
     </div>
+    <input type="text" id="userInput" placeholder="Ask something..." />
+    <button onclick="talk()">Send</button>
   </div>
   <script src="chatbot.js"></script>
 </body>
