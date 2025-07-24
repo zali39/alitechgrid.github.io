@@ -1,62 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AlitechGrid | AI Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlitechGrid</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to AlitechGrid</h1>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#quizgen">Quiz Generator</a></li>
-        <li><a href="#plagcheck">Plagiarism Checker</a></li>
-        <li><a href="#outlineai">Course Outline AI</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="services">
-      <h2>Our AI-Powered Services</h2>
-      <p>Explore our educational and enterprise AI tools for modern institutions.</p>
-    </section>
-
-    <section id="quizgen">
-      <h2>Quiz Generator</h2>
-      <p>Upload a course outline to auto-generate quizzes with AI.</p>
-    </section>
-
-    <section id="plagcheck">
-      <h2>Plagiarism Checker</h2>
-      <p>Submit your project to check for originality using our advanced LLM engine.</p>
-    </section>
-
-    <section id="outlineai">
-      <h2>Course Outline Analyzer</h2>
-      <p>Upload DOCX/PDF files to extract learning outcomes and generate assessments.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact & Feedback</h2>
-      <p>Reach out to us for demos, pricing, and more information.</p>
-    </section>
-  </main>
-
-  <div id="chatbot">
-    <img src="chatbot-icon.png" alt="Chatbot Icon" onclick="toggleChat()" />
+  <h1>Welcome to AlitechGrid</h1>
+  <div id="chatbot-container">
+    <img src="chatbot-icon.png" id="chatbot-icon" alt="Chatbot Icon" />
     <div id="chat-window" style="display:none;">
-      <h3>Ask me anything!</h3>
-      <input type="text" id="user-input" placeholder="Ask about our services..." />
-      <button onclick="sendMessage()">Send</button>
       <div id="chat-log"></div>
+      <input type="text" id="chat-input" placeholder="Ask me anything..." />
+      <button onclick="sendMessage()">Send</button>
     </div>
   </div>
-
   <script src="chatbot.js"></script>
 </body>
 </html>
