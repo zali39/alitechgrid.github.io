@@ -1,13 +1,18 @@
-# AlitechGrid Chatbot Frontend
+# AlitechGrid Chatbot-Enhanced Website
 
-This is the static frontend for the AlitechGrid website, hosted on GitHub Pages. It includes:
-- `index.html` with chatbot integration
-- `chatbot.js` for chatbot logic
-- `style.css` for styling
-- `chatbot-icon.png` to toggle chatbot
-- Integrated with PythonAnywhere or Render backend
+This repository contains the static frontend of the AlitechGrid website featuring an AI-powered FAQ chatbot.
 
-To deploy:
-1. Upload all files to GitHub repository.
-2. Enable GitHub Pages in repository settings.
-3. Backend must be deployed separately on PythonAnywhere or Render.
+## Files
+- `index.html`: Main homepage with chatbot integration
+- `chatbot.js`: Chatbot logic and FAQs
+- `style.css`: Styling for layout and chatbot
+- `chatbot-icon.png`: Icon to launch chatbot
+- `README.md`: Project description
+
+## Hosting
+- Frontend hosted on GitHub Pages
+- Backend (optional) can be deployed via PythonAnywhere
+
+## Instructions
+1. Upload files to your GitHub Pages repo
+2. For backend support (form/email/API), deploy Flask app at PythonAnywhere

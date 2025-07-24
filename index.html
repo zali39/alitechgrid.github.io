@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AlitechGrid | AI Education & Enterprise</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="chatbot-icon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlitechGrid | AI Solutions</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to AlitechGrid</h1>
-        <p>Your gateway to AI-Powered Education & Business Solutions</p>
-    </header>
-
-    <main>
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>AI for Education</li>
-                <li>AI for Business</li>
-                <li>Corporate Training</li>
-                <li>Resume Analyzer</li>
-            </ul>
-        </section>
-    </main>
-
-    <div id="chatbot-container">
-        <img src="chatbot-icon.png" id="chatbot-icon" alt="Chatbot">
-        <div id="chat-window" class="hidden">
-            <div id="chat-output"></div>
-            <input type="text" id="user-input" placeholder="Ask about our services...">
-            <button onclick="sendMessage()">Send</button>
-        </div>
+  <header>
+    <h1>Welcome to AlitechGrid</h1>
+    <p>Your gateway to AI-Powered Education & Business Solutions</p>
+  </header>
+  <main>
+    <section class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>AI for Education</li>
+        <li>AI for Business</li>
+        <li>Corporate Training</li>
+        <li>Resume Analyzer</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 AlitechGrid. All rights reserved.</p>
+  </footer>
+  <div id="chatbot">
+    <img id="chatbot-icon" src="chatbot-icon.png" alt="Chatbot Icon" />
+    <div id="chatbox" class="hidden">
+      <div id="chatlog"></div>
+      <input type="text" id="userInput" placeholder="Ask about our services..." />
+      <button onclick="sendMessage()">Send</button>
     </div>
-
-    <script src="chatbot.js"></script>
+  </div>
+  <script src="chatbot.js"></script>
 </body>
 </html>
