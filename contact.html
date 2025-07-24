@@ -1,3 +1,140 @@
+
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Contact | AlitechGrid</title></head>
-<body><h1>Contact Us</h1><p>Email: info@alitechgrid.com</p><p>Phone: +1-800-555-ALITECH</p></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | AlitechGrid</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #eef3f8;
+      color: #1d1d1d;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 1rem 2rem;
+      color: white;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+      filter: drop-shadow(0 0 8px #00aaff);
+      border-radius: 6px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #2c5364, #203a43);
+      color: white;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .map-container {
+      margin: 2rem auto;
+      max-width: 100%;
+      height: 300px;
+    }
+    form {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #4ca1af;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0f2027;
+      color: white;
+      font-size: 0.95rem;
+    }
+    .social-media a {
+      color: white;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="AlitechGrid Logo">
+      <span style="font-weight: bold; font-size: 1.2rem;">AlitechGrid</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="ai_education.html">AI in Education</a>
+      <a href="ai_business.html">AI for Business</a>
+      <a href="training.html">Training</a>
+      <a href="resume_builder.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Contact AlitechGrid</h1>
+    <p>We're here to help you design smart AI-powered learning and business systems. Reach out to start a conversation.</p>
+  </header>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.801197913564!2d-122.79140592396461!3d49.27422117138801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485df94fce5b5ed%3A0x5b84e3bde26d88e1!2s1150%20Kensal%20Pl%2C%20Coquitlam%2C%20BC%20V3B%200H4%2C%20Canada!5e0!3m2!1sen!2sca!4v1721760000000!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <form action="https://formspree.io/f/xnqkydgz" method="POST">
+    <h2 style="text-align: center; color: #2c5364;">Send Us a Message</h2>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+    <button type="submit">Send Inquiry</button>
+  </form>
+
+  <footer>
+    &copy; 2025 AlitechGrid | Bridging AI and Human Learning
+    <div class="social-media">
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://youtube.com" target="_blank">YouTube</a>
+      <a href="https://github.com/zali39" target="_blank">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
